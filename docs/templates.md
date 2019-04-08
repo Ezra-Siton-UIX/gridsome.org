@@ -29,7 +29,7 @@ query Post ($path: String!) {
     title
     content
   }
-}
+} 
 </page-query>
 
 <script>
