@@ -120,7 +120,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 ### Linking content to template
 
-Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem) added to config (`gridsome.config.js`).
+Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem) added to config (`gridsome.config.js`) and [@gridsome/transformer-remark plugin](https://gridsome.org/plugins/@gridsome/transformer-remark)
 
 ```javascript
 module.exports = {
@@ -136,7 +136,18 @@ module.exports = {
     {
       // another data source
     },
-  ]
+  ],
+  transformers: {
+    //Add markdown support to all file-system sources
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        '@gridsome/remark-prismjs'
+      ]
+    }
+  },
 }
 ```
 Learn more about [Use data source plugins](/docs/fetching-data#use-data-source-plugins)
