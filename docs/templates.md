@@ -98,7 +98,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 
 ```
-Adding more posts entries:
+Adding one more post:
 
 `/content/posts/my-second-post.md`:
 
@@ -120,7 +120,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 ### Linking content to template
 
-Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem) added to config (`gridsome.config.js`) and [@gridsome/transformer-remark plugin](https://gridsome.org/plugins/@gridsome/transformer-remark)
+Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem) added to config (`gridsome.config.js`). We also use [@gridsome/transformer-remark plugin](https://gridsome.org/plugins/@gridsome/transformer-remark).
 
 ```javascript
 module.exports = {
