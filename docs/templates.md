@@ -128,8 +128,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Post', /* vue file in src/templates must match the GraphQL typeName to have a template for it.*/
-        path: 'content/posts/*.md', /* Where to look for files. Should be a glob path. */
+        typeName: 'Post', /* vue file in src/templates must match the GraphQL typeName to have a template for it */
+        path: 'content/posts/*.md', /* Where to look for files. Should be a glob path */
         route: '/:slug', /* Define a dynamic route */
       }
     },
